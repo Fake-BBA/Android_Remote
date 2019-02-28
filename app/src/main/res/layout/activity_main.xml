@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kongqw="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <com.kongqw.rockerlibrary.view.RockerView
+        android:id="@+id/rockerView_left"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        kongqw:areaBackground="@drawable/default_area_bg"
+        kongqw:rockerBackground="@drawable/default_rocker_bg"
+        kongqw:rockerRadius="30dp" />
+
+    <TextView
+        android:id="@+id/log_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rockerView_left" />
+
+
+
+    <com.kongqw.rockerlibrary.view.RockerView
+        android:id="@+id/rockerView_right"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        kongqw:areaBackground="@mipmap/view_big"
+        kongqw:rockerBackground="@mipmap/view_small"
+        kongqw:rockerRadius="30dp" />
+
+    <TextView
+        android:id="@+id/log_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rockerView_left"
+        android:layout_alignParentRight="true" />
+
+
+
+    <com.kongqw.rockerlibrary.view.RockerView
+        android:id="@+id/rockerView_center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        kongqw:areaBackground="#FF333333"
+        kongqw:rockerBackground="#FF987654"
+        kongqw:rockerRadius="15dp" />
+
+    <TextView
+        android:id="@+id/Pitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rockerView_center"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pitch"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/N_S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Roll"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
